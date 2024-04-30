@@ -1,0 +1,20 @@
+/* BarChart.css */
+.bar {
+    transition: fill 0.3s;
+}
+
+.bar:hover {
+    fill: red; /* Change color on hover */
+}
+
+.parallelChart-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px; /* Adds spacing at the top of the container */
+}
+
+.chart-container {
+    border: 1px solid #ccc; /* Adds border around each chart */
+    padding: 10px;
+}

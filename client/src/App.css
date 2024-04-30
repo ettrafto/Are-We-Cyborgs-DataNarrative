@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'sinhala-mn';
+  src: url(http://localhost:3001/static/media/sinhala-mn.f4d2c8eeb47e193c92b5.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sinhala-mn-bold';
+  src: url(http://localhost:3001/static/media/sinhala-mn-bold.98230cdd9ee122e0a438.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url(http://localhost:3001/static/media/SourceCodePro-Regular.75bc14637f1d0317a8c5.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'sinhala-mn';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Using Arial for clean readability */
+  background-color: #333; /* Dark gray background */
+  color: #fff; /* White text color for all text in the body */
+}
+
+/* Main Container Styling */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  margin: 0 auto; /* Centers the container in the middle of the screen */
+  padding: 20px; /* Adds padding inside the container */
+  background-color: #444; /* Slightly lighter gray for the main container for a subtle contrast */
+  border-radius: 8px; /* Optional: Rounded corners for the main container */
+}
+
+/* Component Styling */
+.component-container {
+  width: 100%; /* Takes the full width of the main container */
+  margin: 10px 0; /* Vertical spacing between components */
+  padding: 15px;
+  background-color: #555; /* Even lighter gray for components for further distinction */
+  border: 1px solid #666; /* Suttle border */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.title-container{
+  color: #fff;
+  padding: 4%;
+  font-weight: bold;
+  text-align: center;
+}
+.title-container .title{
+  font-size: 500%;
+  padding: 0%;
+}
+.title-container .subtitle{
+  font-family: 'sinhala-mn-bold';
+}
+
+/* Specific Container Styling Examples */
+ .init-questions-container, .history-container, .change-container,
+.mental-health-container, .interview-container, .takeaways-container, .habits-container,
+.citations-container {
+  padding: 7%;
+  color: #fff; /* Ensures text inside these containers is white */
+  width:100%;
+
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc; /* Adds a gray line below each section */
+  padding-bottom: 20px; /* Adds some space below the content before the line */
+  margin-bottom: 20px; /* Adds space after the line */
+}
+
+.init-questions-container, .history-container, .change-container {
+  text-align: center;
+}
+
+.init-questions-container .init-question{
+  padding: 1em;
+  font-family: 'sinhala-mn-bold';
+  font-size: 1.7em;
+
+}
+.init-questions-container{
+  padding-bottom: 5em;
+}
+
+.history-container .history{
+  text-overflow: clip;
+}
+
+.history-label{
+  font-size: 1.4em;
+  padding-bottom: .5em;
+  text-align: center;
+}
+
+.total-smartphone-text{
+  font-family: 'SourceCodePro';
+}
+.percent-change-text{
+  font-family: 'SourceCodePro';
+}
+
+.parallelChart-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows the container to wrap items to the next line */
+  justify-content: space-around; /* Spaces items evenly with space at the ends */
+  width: 100%; /* Ensures the container takes the full width */
+}
+
+.chart-cell {
+  flex-basis: 10%; /* Each item takes roughly a third of the container width */
+  margin: 1%; /* Adds a small margin around each cell */
+  box-sizing: border-box; /* Includes padding and border in the width calculation */
+}
+
+.change-label{
+  font-size: 1.4em;
+  padding-bottom: .5em;
+  text-align: center;
+}
+
+.mental-health-label{
+  font-size: 1.4em;
+  padding-bottom: .5em;
+  text-align: center;
+}
+
+.mental-health-container div{
+  text-align: center;
+  padding: 1%;
+}
+
+.mental-health-container div ul{
+  text-align: center;
+  padding-left: 2.2em;
+}
+
+.mental-health-container div ul ul li{
+  text-align: left;
+  margin-left: 4em;
+  padding: 2%;
+  width:70%
+}
+
+.mental-health-container div ul ul h3{
+text-align: left;
+padding-left:1em
+}
+
+.mental-health-container div ul ul h3{
+  font-family: 'sinhala-mn-bold';
+}
+.born-label{
+  font-family: 'SourceCodePro';
+}
+
+.interview-container{
+  padding-left: 6em;
+}
+.interview-label{
+  font-size: 2.1em;
+  padding-bottom: .5em;
+  text-align: center;
+  font-family: 'sinhala-mn-bold';
+
+}
+
+.interview-container ul ul{
+  list-style: none;
+  margin:0;
+}
+.interview-container ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+.interview-question{
+  font-family: 'sinhala-mn-bold';
+  font-size: large;
+  padding: 1em;
+  background-color: rgb(108, 107, 107); /* Fill the div with gray color */
+  border: 2px solid rgb(75, 74, 74); /* Specify the border thickness and color */
+  border-radius: 10px;
+}
+
+.interview-answer{
+  padding: 1em 0em 1em 3em;
+}
+
+.takeaways-container ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+.takeaway-heading{
+  font-size: 2.1em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-family: 'sinhala-mn-bold';
+}
+
+.takeaway-title{
+  text-align: center;
+  font-family: 'sinhala-mn-bold';
+  font-size: 1.3em;
+  padding-top: 1em;
+}
+
+.takeaway{
+padding: 2em;
+width:40%;
+text-align: center;
+margin:auto;
+}
+
+.habits-container ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+
+.habit-heading{
+  font-size: 2.1em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-family: 'sinhala-mn-bold';
+}
+
+.habit-title{
+  text-align: center;
+  font-family: 'sinhala-mn-bold';
+  font-size: 1.3em;
+  padding-top: 1em;
+}
+
+.habit{
+  padding: 2em;
+  width:40%;
+  text-align: center;
+  margin:auto;}
+
+
+/* Adding responsiveness to layout */
+@media (max-width: 768px) {
+  .main-container {
+    width: 90%; /* Increases width on smaller screens for better readability */
+  }
+}

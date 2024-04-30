@@ -1,0 +1,16 @@
+#tooltip {
+    position: absolute;
+    text-align: center;
+    width: 180px; /* Increased width */
+    height: 40px; /* Increased height */
+    padding: 10px; /* Adjusted padding */
+    font: 14px sans-serif; /* Adjusted font size */
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0; /* Initial state should be invisible */
+}
+.percent-of-us-graph{
+    width:100%;
+}
